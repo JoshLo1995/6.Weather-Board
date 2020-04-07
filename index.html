@@ -31,7 +31,7 @@
             <div class = "row">
                 <div class = "col-12">
                     <div class = "row">
-                        <div class = "col-4" style = "border: black 2px solid;">
+                        <div class = "col-4" id = "searchStuff" style = "border: black 2px solid;">
                             <div>Search for a city: </div>
                             <div class = "row">
                                 <input id = "searchBar" placeholder = "Search for a city">
@@ -44,6 +44,9 @@
                             <br>
                             <div class = "row" id = "prevSearched">
                                 <span>Previously searched cities:</span>
+                                <div class = "col-12"> 
+                                    <ul id = "prevSearched"></ul>
+                                </div>
                             </div>
                         </div>
             <!-- Right hand box -->
@@ -57,11 +60,8 @@
                                         <div id = "windSpeed" class = "row">Wind Speed: 6.9 mph</div>
                                         <div id = "uvIndex" class = "row">UV Index: 9.49</div>
                                     </div>
-
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
