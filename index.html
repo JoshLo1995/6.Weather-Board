@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+    <body style = "background-color: #f4f4f8; font-family: Arial Narrow; font-size: 18px;">
+
+        <!-- Banner -->
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-12">
+                    <div class = "row">
+                        <div id = "title" class = "text-center" style = "background-color: #2ab7ca; font-size: 50px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                            Weather Dashboard
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class = "row">
+                <div class = "col-12">
+                    <div class = "row">
+                        <div class = "col-4" style = "border: black 2px solid;">
+                            <div>Search for a city: </div>
+                            <div class = "row">
+                                <input id = "searchBar" placeholder = "Search for a city">
+                                <button id = "submitButton" type = "button" class = "btn btn-info">
+                                    <span class = "glyphicon glyphicon-search">Search</span>
+                                </button>
+                            </div>
+
+                            <!-- List of previously searched cities -->
+                            <br>
+                            <div class = "row" id = "prevSearched">
+                                <span>Previously searched cities:</span>
+                            </div>
+                        </div>
+            <!-- Right hand box -->
+                        <div class = "col-8" style = "border: black solid 2px">
+                            <div class = "row">
+                                <div id = "mainWeatherDisplay" style = "border: black">
+                                    <div class = "col-12">
+                                        <div id = "cityName" class = "row">Placeholder City (04/20/2020)</div>
+                                        <div id = "temperature" class = "row">Temperature: 42.0 ˚F</div>
+                                        <div id = "humidity" class = "row">Humidity: 100%</div>
+                                        <div id = "windSpeed" class = "row">Wind Speed: 6.9 mph</div>
+                                        <div id = "uvIndex" class = "row">UV Index: 9.49</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Javascript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script  src = "script.js"></script>
+        <script  src = "assets/Libraries/moment.js"></script>
+    </body>
+</html>
